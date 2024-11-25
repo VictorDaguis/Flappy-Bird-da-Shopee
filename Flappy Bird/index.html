@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR" onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird da Shopee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+    <!-- Formulário -->
+    <div id="formContainer" class="formContainer">
+        <div class="container">
+            <section class="header">
+                <h2>Nova conta</h2>
+            </section>
+            <form id="form" class="form">
+                <div class="form-content">
+                    <label for="username">Nome do usuário</label>
+                    <input type="text" id="username" placeholder="Digite o nome do usuário..." required />
+                </div>
+                <div class="form-content">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Digite o seu email..." required />
+                </div>
+                <div class="form-content">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha..." required />
+                </div>
+                <div class="form-content">
+                    <label for="password-confirmation">Confirmação de senha</label>
+                    <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente..." required />
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <div id="game" style="display: none;">
+        <div id="game">
+            <div id="block"></div>
+            <div id="hole"></div>
+            <div id="character"></div>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
